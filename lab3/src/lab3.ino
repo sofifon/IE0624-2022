@@ -1,4 +1,5 @@
 #include <PCD8544.h>
+#include "ArduPID.h"
 #include "DHT.h"
 #define DHTPIN 8
 #define DHTTYPE DHT22
@@ -6,8 +7,20 @@ PCD8544 lcd;
 DHT dht(2, DHTTYPE);
 int RED=13;
 int BLUE=12;
-int pot=0;
+float pot=0;
+float pot1=0;
 int potPin = A0;
+int npnTrans = A5;
+
+ArduPID myController;
+double input;
+double output;
+
+// Arbitrary setpoint and gains - adjust these as fit for your project:
+double setpoint = 35;
+double p = 10;
+double i = 1;
+double d = 0.5;
 
 void setup() {
    lcd.begin(84, 48);
@@ -15,21 +28,55 @@ void setup() {
   Serial.begin(9600);
   Serial.println("Here we go!");
   pinMode(RED, OUTPUT);
-  pinMode(BLUE, OUTPUT);   
+  pinMode(BLUE, OUTPUT);
+  pinMode(npnTrans, OUTPUT);   
+
+  myController.begin(&input, &output, &setpoint, p, i, d);
+
+  // myController.reverse()               // Uncomment if controller output is "reversed"
+  // myController.setSampleTime(10);      // OPTIONAL - will ensure at least 10ms have past between successful compute() calls
+  myController.setOutputLimits(0, 255);
+  myController.setBias(255.0 / 2.0);
+  myController.setWindUpLimits(-5, 5); // Groth bounds for the integral term to prevent integral wind-up
+  
+  myController.start();
 }
 void loop() {
     lcd.clear();
     float hum = dht.readHumidity();
     float temp = dht.readTemperature();         //Reading the temperature in degrees
     float senal = 1;
-    pot = analogRead(potPin)*12/1000 +30;    
+    pot = analogRead(potPin)*12/1000 +30;
+    pot1= (pot-30)/12*255;        
     if (isnan(hum) || isnan(temp) || isnan(pot)) {      //Checking if the arduino have recieved the values or not
      lcd.println("Failed to read from DHT sensor!");
       Serial.println("Failed");
          
      return;
-}
+    }
+  input=temp;
+  if (setpoint != pot){
+    setpoint=pot;
+    myController.begin(&input, &output, &setpoint, p, i, d);
+    myController.setOutputLimits(0, 255);
+    myController.setBias(255.0 / 2.0);
+    myController.setWindUpLimits(-5, 5); // Groth bounds for the integral term to prevent integral wind-up
   
+    myController.start();        
+  }
+  
+  
+  myController.compute();
+  myController.debug(&Serial, "myController", PRINT_INPUT    | // Can include or comment out any of these terms to print
+                                              PRINT_OUTPUT   | // in the Serial plotter
+                                              PRINT_SETPOINT //|
+                                              //PRINT_BIAS     |
+                                              //PRINT_P        |
+                                              //PRINT_I        |
+                                              //PRINT_D
+                                              );
+  senal=output/255*80;
+  analogWrite(npnTrans, output);
   lcd.setCursor(0, 0);
   lcd.print("T_o: ");
   lcd.print(pot);
@@ -39,7 +86,7 @@ void loop() {
   lcd.print("Senal: ");
   lcd.print(senal);
   Serial.println(senal);
-  lcd.print(" H");  
+  lcd.print("*C");  
   lcd.setCursor(0, 2);
   lcd.print("T_s: ");
   Serial.println(temp);
