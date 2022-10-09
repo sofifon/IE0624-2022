@@ -10,7 +10,7 @@ int BLUE=12;
 float pot=0;
 float pot1=0;
 int potPin = A0;
-int npnTrans = A5;
+int npnTrans = 9;
 
 ArduPID myController;
 double input;
@@ -65,39 +65,29 @@ void loop() {
     myController.start();        
   }
   
-  
   myController.compute();
-  myController.debug(&Serial, "myController", PRINT_INPUT    | // Can include or comment out any of these terms to print
-                                              PRINT_OUTPUT   | // in the Serial plotter
-                                              PRINT_SETPOINT //|
-                                              //PRINT_BIAS     |
-                                              //PRINT_P        |
-                                              //PRINT_I        |
-                                              //PRINT_D
-                                              );
+
   senal=output/255*80;
   analogWrite(npnTrans, output);
   lcd.setCursor(0, 0);
   lcd.print("T_o: ");
   lcd.print(pot);
-  Serial.println(pot);
   lcd.print(" *C");
   lcd.setCursor(0,1);
   lcd.print("Senal: ");
   lcd.print(senal);
-  Serial.println(senal);
   lcd.print("*C");  
   lcd.setCursor(0, 2);
   lcd.print("T_s: ");
-  Serial.println(temp);
   lcd.print(temp);
   lcd.print(" *C "); 
   lcd.setCursor(0,3);   
   lcd.print("H_s: ");
-  Serial.println(hum);
   lcd.print(hum);
   lcd.print(" %\t");
 
+  Serial.println(temp);
+  Serial.println(hum);
   if (temp<30){
     digitalWrite(RED, LOW);
     digitalWrite(BLUE, HIGH);        
