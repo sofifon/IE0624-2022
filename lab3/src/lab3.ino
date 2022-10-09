@@ -3,6 +3,7 @@
 #include "DHT.h"
 #define DHTPIN 8
 #define DHTTYPE DHT22
+
 PCD8544 lcd;
 DHT dht(2, DHTTYPE);
 int RED=13;
@@ -11,6 +12,7 @@ float pot=0;
 float pot1=0;
 int potPin = A0;
 int npnTrans = 9;
+int switch_pin = 8;
 
 ArduPID myController;
 double input;
@@ -23,18 +25,15 @@ double i = 1;
 double d = 0.5;
 
 void setup() {
-   lcd.begin(84, 48);
-   dht.begin();
+  lcd.begin(84, 48);
+  dht.begin();
   Serial.begin(9600);
-  Serial.println("Here we go!");
   pinMode(RED, OUTPUT);
   pinMode(BLUE, OUTPUT);
-  pinMode(npnTrans, OUTPUT);   
+  pinMode(npnTrans, OUTPUT);
+  pinMode(switch_pin, INPUT);   
 
   myController.begin(&input, &output, &setpoint, p, i, d);
-
-  // myController.reverse()               // Uncomment if controller output is "reversed"
-  // myController.setSampleTime(10);      // OPTIONAL - will ensure at least 10ms have past between successful compute() calls
   myController.setOutputLimits(0, 255);
   myController.setBias(255.0 / 2.0);
   myController.setWindUpLimits(-5, 5); // Groth bounds for the integral term to prevent integral wind-up
@@ -86,8 +85,10 @@ void loop() {
   lcd.print(hum);
   lcd.print(" %\t");
 
-  Serial.println(temp);
-  Serial.println(hum);
+  if(digitalRead(switch_pin) == HIGH){  
+    Serial.println(temp);
+    Serial.println(hum);
+  }
   if (temp<30){
     digitalWrite(RED, LOW);
     digitalWrite(BLUE, HIGH);        
