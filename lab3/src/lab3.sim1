@@ -4,94 +4,156 @@
 <mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="build/arduino.avr.uno/lab3.ino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
 </item>
 
-<item itemtype="Dht22" CircId="Dht22-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-300,-408" rotation="0" hflip="1" vflip="1" label="Dht22-2" idLabPos="-40,-40" labelrot="0" valLabPos="0,0" valLabRot="0" DHT22="DHT22" TempInc="0.5 °C" HumiInc="5 _%" />
+<item itemtype="Led" CircId="Led-78" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,-172" rotation="-180" hflip="1" vflip="1" label="Led-78" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
-<item itemtype="Pcd8544" CircId="Pcd8544-53" mainComp="false" Show_id="true" Show_Val="false" Pos="-440,-324" rotation="0" hflip="1" vflip="1" label="Pcd8544-53" idLabPos="-32,-66" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Led" CircId="Led-81" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,-196" rotation="-180" hflip="1" vflip="1" label="Led-81" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
-<item itemtype="Led" CircId="Led-78" mainComp="false" Show_id="false" Show_Val="false" Pos="-384,-152" rotation="-180" hflip="1" vflip="1" label="Led-78" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+<item itemtype="Resistor" CircId="Resistor-83" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-276,-196" rotation="0" hflip="1" vflip="1" label="Resistor-83" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
-<item itemtype="Led" CircId="Led-81" mainComp="false" Show_id="false" Show_Val="false" Pos="-384,-176" rotation="-180" hflip="1" vflip="1" label="Led-81" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+<item itemtype="Resistor" CircId="Resistor-84" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-276,-172" rotation="0" hflip="1" vflip="1" label="Resistor-84" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
-<item itemtype="Resistor" CircId="Resistor-83" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-424,-176" rotation="0" hflip="1" vflip="1" label="Resistor-83" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+<item itemtype="Ground" CircId="Ground-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-300,-144" rotation="0" hflip="1" vflip="1" label="Ground-85" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Resistor" CircId="Resistor-84" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-424,-152" rotation="0" hflip="1" vflip="1" label="Resistor-84" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+<item itemtype="Potentiometer" CircId="Potentiometer-107" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-32,-236" rotation="0" hflip="-1" vflip="-1" label="Potentiometer-107" idLabPos="-16,-40" labelrot="0" valLabPos="19,-19" valLabRot="0" Resistance="1000 Ω" Value_Ohm="377 Ω" />
 
-<item itemtype="Ground" CircId="Ground-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-448,-124" rotation="0" hflip="1" vflip="1" label="Ground-85" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Ground" CircId="Ground-110" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-212" rotation="0" hflip="1" vflip="1" label="Ground-110" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Potentiometer" CircId="Potentiometer-107" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="48,-236" rotation="0" hflip="-1" vflip="-1" label="Potentiometer-107" idLabPos="-16,-40" labelrot="0" valLabPos="19,-19" valLabRot="0" Resistance="1000 Ω" Value_Ohm="377 Ω" />
+<item itemtype="Switch" CircId="Switch-583" mainComp="false" Show_id="false" Show_Val="false" Pos="-276,-224" rotation="0" hflip="1" vflip="1" label="Switch-583" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
 
-<item itemtype="Ground" CircId="Ground-110" mainComp="false" Show_id="false" Show_Val="false" Pos="112,-188" rotation="0" hflip="1" vflip="1" label="Ground-110" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Resistor" CircId="Resistor-738" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-336,-196" rotation="0" hflip="1" vflip="1" label="Resistor-738" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="28 Ω" />
 
-<item itemtype="Fixed Voltage" CircId="Fixed Voltage-470" mainComp="false" Show_id="false" Show_Val="false" Pos="20,-416" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-470" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="12 V" />
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-220,-316" rotation="0" hflip="1" vflip="1" label="Arduino Uno-1" idLabPos="100,-21" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="build/arduino.avr.uno/lab3.ino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
 
-<item itemtype="Resistor" CircId="Resistor-472" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="76,-336" rotation="-630" hflip="1" vflip="-1" label="Resistor-472" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="-90" Resistance="100 Ω" />
+<item itemtype="Dht22" CircId="Dht22-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-252,-368" rotation="0" hflip="1" vflip="1" label="Dht22-2" idLabPos="-40,-40" labelrot="0" valLabPos="0,0" valLabRot="0" DHT22="DHT22" TempInc="0.5 °C" HumiInc="5 _%" />
 
-<item itemtype="Ground" CircId="Ground-474" mainComp="false" Show_id="false" Show_Val="false" Pos="96,-292" rotation="0" hflip="1" vflip="1" label="Ground-474" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+<item itemtype="Pcd8544" CircId="Pcd8544-53" mainComp="false" Show_id="true" Show_Val="false" Pos="-512,-348" rotation="0" hflip="1" vflip="1" label="Pcd8544-53" idLabPos="-32,-66" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Voltimeter" CircId="Voltimeter-483" mainComp="false" Show_id="false" Show_Val="false" Pos="152,-368" rotation="0" hflip="1" vflip="1" label="Voltimeter-483" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
+<item itemtype="Led" CircId="Led-78" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,-172" rotation="-180" hflip="1" vflip="1" label="Led-78" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
-<item itemtype="Mosfet" CircId="Mosfet-490" mainComp="false" Show_id="false" Show_Val="false" Pos="96,-396" rotation="0" hflip="1" vflip="1" label="Mosfet-490" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" P_Channel="false" Depletion="false" RDSon="1 Ω" Threshold="3 V" />
+<item itemtype="Led" CircId="Led-81" mainComp="false" Show_id="false" Show_Val="false" Pos="-236,-196" rotation="-180" hflip="1" vflip="1" label="Led-81" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
-<item itemtype="Switch" CircId="Switch-583" mainComp="false" Show_id="false" Show_Val="false" Pos="-608,-224" rotation="0" hflip="1" vflip="1" label="Switch-583" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+<item itemtype="Resistor" CircId="Resistor-83" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-276,-196" rotation="0" hflip="1" vflip="1" label="Resistor-83" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
-<item itemtype="Resistor" CircId="Resistor-587" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-564,-192" rotation="0" hflip="1" vflip="1" label="Resistor-587" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+<item itemtype="Resistor" CircId="Resistor-84" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-276,-172" rotation="0" hflip="1" vflip="1" label="Resistor-84" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
 
-<item itemtype="Node" CircId="Node-88" mainComp="false" Pos="-448,-152" />
+<item itemtype="Ground" CircId="Ground-85" mainComp="false" Show_id="false" Show_Val="false" Pos="-300,-144" rotation="0" hflip="1" vflip="1" label="Ground-85" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Node" CircId="Node-488" mainComp="false" Pos="96,-316" />
+<item itemtype="Potentiometer" CircId="Potentiometer-107" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-32,-236" rotation="0" hflip="-1" vflip="-1" label="Potentiometer-107" idLabPos="-16,-40" labelrot="0" valLabPos="19,-19" valLabRot="0" Resistance="1000 Ω" Value_Ohm="377 Ω" />
 
-<item itemtype="Node" CircId="Node-519" mainComp="false" Pos="76,-360" />
+<item itemtype="Ground" CircId="Ground-110" mainComp="false" Show_id="false" Show_Val="false" Pos="0,-212" rotation="0" hflip="1" vflip="1" label="Ground-110" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Connector" uid="connector-555" startpinid="Pcd8544-53-PinRst" endpinid="Uno-1-6" pointList="-472,-284,-212,-284,-212,-252" />
+<item itemtype="Switch" CircId="Switch-583" mainComp="false" Show_id="false" Show_Val="false" Pos="-276,-224" rotation="0" hflip="1" vflip="1" label="Switch-583" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
 
-<item itemtype="Connector" uid="connector-556" startpinid="Pcd8544-53-PinCs" endpinid="Uno-1-7" pointList="-456,-284,-456,-244,-212,-244" />
+<item itemtype="Resistor" CircId="Resistor-738" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-504,-120" rotation="0" hflip="1" vflip="1" label="Resistor-738" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="28 Ω" />
 
-<item itemtype="Connector" uid="connector-557" startpinid="Pcd8544-53-PinDc" endpinid="Uno-1-5" pointList="-440,-284,-212,-284,-212,-260" />
+<item itemtype="Oscope" CircId="Oscope-868" mainComp="false" Show_id="false" Show_Val="false" Pos="-312,48" rotation="0" hflip="1" vflip="1" label="Oscope-868" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _Pixels" Basic_Y="135 _Pixels" TimDiv="1000000000" TimPos="0,0,20000000,0," VolDiv="0,1,0,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" Trigger="4" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
 
-<item itemtype="Connector" uid="connector-558" startpinid="Pcd8544-53-PinSi" endpinid="Uno-1-4" pointList="-424,-284,-320,-284,-320,-268,-212,-268" />
+<item itemtype="BJT" CircId="BJT-895" mainComp="false" Show_id="false" Show_Val="false" Pos="-608,-160" rotation="0" hflip="1" vflip="1" label="BJT-895" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
 
-<item itemtype="Connector" uid="connector-559" startpinid="Pcd8544-53-PinScl" endpinid="Uno-1-3" pointList="-408,-284,-212,-284,-212,-276" />
+<item itemtype="Mosfet" CircId="Mosfet-896" mainComp="false" Show_id="false" Show_Val="false" Pos="-556,-176" rotation="0" hflip="1" vflip="1" label="Mosfet-896" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" P_Channel="true" Depletion="false" RDSon="1 Ω" Threshold="3 V" />
 
-<item itemtype="Connector" uid="connector-561" startpinid="Resistor-84-lPin" endpinid="Node-88-1" pointList="-440,-152,-448,-152" />
+<item itemtype="Battery" CircId="Battery-897" mainComp="false" Show_id="false" Show_Val="false" Pos="-508,-200" rotation="0" hflip="1" vflip="1" label="Battery-897" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="12 V" />
 
-<item itemtype="Connector" uid="connector-562" startpinid="Node-88-2" endpinid="Ground-85-Gnd" pointList="-448,-152,-448,-140" />
+<item itemtype="Ground" CircId="Ground-907" mainComp="false" Show_id="false" Show_Val="false" Pos="-600,-104" rotation="0" hflip="1" vflip="1" label="Ground-907" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Connector" uid="connector-563" startpinid="Resistor-83-rPin" endpinid="Led-81-rPin" pointList="-408,-176,-400,-176" />
+<item itemtype="Voltimeter" CircId="Voltimeter-916" mainComp="false" Show_id="false" Show_Val="false" Pos="-440,-88" rotation="0" hflip="1" vflip="1" label="Voltimeter-916" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
 
-<item itemtype="Connector" uid="connector-564" startpinid="Resistor-84-rPin" endpinid="Led-78-rPin" pointList="-408,-152,-400,-152" />
+<item itemtype="Node" CircId="Node-88" mainComp="false" Pos="-300,-172" />
 
-<item itemtype="Connector" uid="connector-565" startpinid="Led-78-lPin" endpinid="Uno-1-13" pointList="-368,-152,-212,-152,-212,-188" />
+<item itemtype="Node" CircId="Node-705" mainComp="false" Pos="-452,-284" />
 
-<item itemtype="Connector" uid="connector-566" startpinid="Led-81-lPin" endpinid="Uno-1-12" pointList="-368,-176,-368,-196,-212,-196" />
+<item itemtype="Node" CircId="Node-708" mainComp="false" Pos="-452,-268" />
 
-<item itemtype="Connector" uid="connector-567" startpinid="Potentiometer-107-PinA" endpinid="Ground-110-Gnd" pointList="64,-236,64,-204,112,-204" />
+<item itemtype="Node" CircId="Node-904" mainComp="false" Pos="-320,-220" />
 
-<item itemtype="Connector" uid="connector-568" startpinid="Uno-1-2" endpinid="Dht22-2-inPin" pointList="-212,-284,-336,-284,-336,-412" />
+<item itemtype="Node" CircId="Node-910" mainComp="false" Pos="-484,-120" />
 
-<item itemtype="Connector" uid="connector-569" startpinid="Uno-1-A4" endpinid="Uno-1-A4" pointList="-68,-292,-68,-292" />
+<item itemtype="Node" CircId="Node-918" mainComp="false" Pos="-532,-120" />
 
-<item itemtype="Connector" uid="connector-570" startpinid="Potentiometer-107-PinM" endpinid="Uno-1-A0" pointList="48,-252,-68,-252,-68,-260" />
+<item itemtype="Node" CircId="Node-921" mainComp="false" Pos="-484,-40" />
 
-<item itemtype="Connector" uid="connector-571" startpinid="Potentiometer-107-PinB" endpinid="Uno-1-5V0" pointList="32,-236,-68,-236,-68,-220" />
+<item itemtype="Node" CircId="Node-923" mainComp="false" Pos="-484,-144" />
 
-<item itemtype="Connector" uid="connector-572" startpinid="Voltimeter-483-rPin" endpinid="Node-488-1" pointList="160,-352,160,-316,96,-316" />
+<item itemtype="Node" CircId="Node-926" mainComp="false" Pos="-600,-120" />
 
-<item itemtype="Connector" uid="connector-573" startpinid="Node-488-2" endpinid="Ground-474-Gnd" pointList="96,-316,96,-308" />
+<item itemtype="Connector" uid="connector-927" startpinid="Pcd8544-53-PinCs" endpinid="Node-708-0" pointList="-528,-308,-528,-268,-452,-268" />
 
-<item itemtype="Connector" uid="connector-574" startpinid="Mosfet-490-Dren" endpinid="Fixed Voltage-470-outnod" pointList="104,-412,36,-412,36,-416" />
+<item itemtype="Connector" uid="connector-928" startpinid="Pcd8544-53-PinSi" endpinid="Uno-1-4" pointList="-496,-308,-212,-308,-212,-268" />
 
-<item itemtype="Connector" uid="connector-575" startpinid="Resistor-472-rPin" endpinid="Node-519-0" pointList="76,-352,76,-360" />
+<item itemtype="Connector" uid="connector-929" startpinid="Pcd8544-53-PinScl" endpinid="Uno-1-3" pointList="-480,-308,-212,-308,-212,-276" />
 
-<item itemtype="Connector" uid="connector-576" startpinid="Voltimeter-483-lPin" endpinid="Node-519-1" pointList="144,-352,76,-352,76,-360" />
+<item itemtype="Connector" uid="connector-930" startpinid="Resistor-84-lPin" endpinid="Node-88-1" pointList="-292,-172,-300,-172" />
 
-<item itemtype="Connector" uid="connector-577" startpinid="Node-519-2" endpinid="Mosfet-490-Gate" pointList="76,-360,76,-396,80,-396" />
+<item itemtype="Connector" uid="connector-931" startpinid="Resistor-83-rPin" endpinid="Led-81-rPin" pointList="-260,-196,-252,-196" />
 
-<item itemtype="Connector" uid="connector-580" startpinid="Resistor-472-lPin" endpinid="Node-488-0" pointList="76,-320,96,-320,96,-316" />
+<item itemtype="Connector" uid="connector-932" startpinid="Resistor-84-rPin" endpinid="Led-78-rPin" pointList="-260,-172,-252,-172" />
 
-<item itemtype="Connector" uid="connector-560" startpinid="Resistor-83-lPin" endpinid="Node-88-0" pointList="-440,-176,-448,-176,-448,-152" />
+<item itemtype="Connector" uid="connector-933" startpinid="Led-78-lPin" endpinid="Uno-1-13" pointList="-220,-172,-212,-172,-212,-188" />
 
-<item itemtype="Connector" uid="Connector-586" startpinid="Switch-583-switch0pinN" endpinid="Uno-1-8" pointList="-592,-224,-212,-224,-212,-228" />
+<item itemtype="Connector" uid="connector-934" startpinid="Led-81-lPin" endpinid="Uno-1-12" pointList="-220,-196,-212,-196" />
 
-<item itemtype="Connector" uid="Connector-585" startpinid="Switch-583-pinP0" endpinid="Uno-1-Vin" pointList="-624,-224,-636,-224,-636,-244,-68,-244" />
+<item itemtype="Connector" uid="connector-935" startpinid="Potentiometer-107-PinA" endpinid="Ground-110-Gnd" pointList="-16,-236,0,-236,0,-228" />
+
+<item itemtype="Connector" uid="connector-936" startpinid="Uno-1-2" endpinid="Dht22-2-inPin" pointList="-212,-284,-288,-284,-288,-372" />
+
+<item itemtype="Connector" uid="connector-937" startpinid="Uno-1-A4" endpinid="Uno-1-A4" pointList="-68,-292,-68,-292" />
+
+<item itemtype="Connector" uid="connector-938" startpinid="Potentiometer-107-PinM" endpinid="Uno-1-A0" pointList="-32,-252,-68,-252,-68,-260" />
+
+<item itemtype="Connector" uid="connector-939" startpinid="Potentiometer-107-PinB" endpinid="Uno-1-5V0" pointList="-48,-236,-68,-236,-68,-220" />
+
+<item itemtype="Connector" uid="connector-940" startpinid="Switch-583-switch0pinN" endpinid="Uno-1-8" pointList="-260,-224,-212,-224,-212,-228" />
+
+<item itemtype="Connector" uid="connector-941" startpinid="Switch-583-pinP0" endpinid="Uno-1-Vin" pointList="-292,-224,-304,-224,-304,-244,-68,-244" />
+
+<item itemtype="Connector" uid="connector-942" startpinid="Pcd8544-53-PinRst" endpinid="Uno-1-6" pointList="-544,-308,-544,-264,-212,-264,-212,-252" />
+
+<item itemtype="Connector" uid="connector-943" startpinid="Node-705-2" endpinid="Uno-1-7" pointList="-452,-284,-212,-284,-212,-244" />
+
+<item itemtype="Connector" uid="connector-944" startpinid="Node-705-1" endpinid="Node-708-1" pointList="-452,-284,-452,-268" />
+
+<item itemtype="Connector" uid="connector-945" startpinid="Node-708-2" endpinid="Node-705-0" pointList="-452,-268,-452,-284" />
+
+<item itemtype="Connector" uid="connector-946" startpinid="Pcd8544-53-PinDc" endpinid="Uno-1-5" pointList="-512,-308,-212,-308,-212,-260" />
+
+<item itemtype="Connector" uid="connector-947" startpinid="Node-88-2" endpinid="Ground-85-Gnd" pointList="-300,-172,-300,-160" />
+
+<item itemtype="Connector" uid="connector-948" startpinid="Uno-1-9" endpinid="Node-904-0" pointList="-212,-220,-320,-220" />
+
+<item itemtype="Connector" uid="connector-949" startpinid="Battery-897-lPin" endpinid="Mosfet-896-Dren" pointList="-524,-200,-548,-200,-548,-192" />
+
+<item itemtype="Connector" uid="connector-950" startpinid="Resistor-83-lPin" endpinid="Node-88-0" pointList="-292,-196,-300,-196,-300,-172" />
+
+<item itemtype="Connector" uid="connector-951" startpinid="Resistor-738-rPin" endpinid="Node-910-0" pointList="-488,-120,-484,-120" />
+
+<item itemtype="Connector" uid="connector-952" startpinid="BJT-895-base" endpinid="Node-904-1" pointList="-624,-160,-624,-220,-320,-220" />
+
+<item itemtype="Connector" uid="connector-953" startpinid="Node-904-2" endpinid="Oscope-868-Pin1" pointList="-320,-220,-320,-216,-400,-216,-400,32" />
+
+<item itemtype="Connector" uid="connector-954" startpinid="BJT-895-collector" endpinid="Mosfet-896-Gate" pointList="-600,-176,-572,-176" />
+
+<item itemtype="Connector" uid="connector-955" startpinid="BJT-895-emiter" endpinid="Node-926-0" pointList="-600,-144,-600,-120" />
+
+<item itemtype="Connector" uid="connector-956" startpinid="Oscope-868-Pin0" endpinid="Node-921-0" pointList="-400,0,-484,0,-484,-40" />
+
+<item itemtype="Connector" uid="connector-957" startpinid="Node-910-2" endpinid="Node-923-0" pointList="-484,-120,-484,-144" />
+
+<item itemtype="Connector" uid="connector-958" startpinid="Mosfet-896-Sour" endpinid="Node-918-0" pointList="-548,-160,-548,-120,-532,-120" />
+
+<item itemtype="Connector" uid="connector-959" startpinid="Voltimeter-916-lPin" endpinid="Node-918-1" pointList="-448,-72,-448,-120,-532,-120" />
+
+<item itemtype="Connector" uid="connector-960" startpinid="Node-918-2" endpinid="Resistor-738-lPin" pointList="-532,-120,-520,-120" />
+
+<item itemtype="Connector" uid="connector-961" startpinid="Voltimeter-916-rPin" endpinid="Node-921-1" pointList="-432,-72,-484,-72,-484,-40" />
+
+<item itemtype="Connector" uid="connector-962" startpinid="Node-921-2" endpinid="Node-910-1" pointList="-484,-40,-484,-120" />
+
+<item itemtype="Connector" uid="connector-963" startpinid="Node-923-2" endpinid="Battery-897-rPin" pointList="-484,-144,-484,-200,-492,-200" />
+
+<item itemtype="Connector" uid="connector-964" startpinid="Node-923-1" endpinid="Node-926-1" pointList="-484,-144,-484,-120,-600,-120" />
+
+<item itemtype="Connector" uid="connector-965" startpinid="Node-926-2" endpinid="Ground-907-Gnd" pointList="-600,-120,-600,-120" />
 
 </circuit>
