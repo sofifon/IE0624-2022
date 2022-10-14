@@ -1,4 +1,4 @@
-#Laboratorio 2. GPIOs, Timers y FSM
+# Laboratorio 2. GPIOs, Timers y FSM
 
 Este laboratorio consiste en la creación de un semáforo simplificado basado en el microcontrolador ATtiny4313. El diseño físico cuenta con dos semáforos peatonales y un semáforo para carros, cada uno tiene una luz roja y una luz verde. Además cuenta con dos botones para que los peatones solicite el cruce peatonal.
 
@@ -12,4 +12,4 @@ El semáforo está programado por una máquina de estados que cuenta con seis es
 
 El botón activa el cruce peatonal, generando una secuencia de estados que generan cambio de luces hasta regresar al estado base de carros cruzando. El botón fue programado por medio de interrupciones al igual que el temporizador que establece cuánto dura cada uno de los estados.
 
-![](informe/images/0-CM.png)
+![Simulación de semáforo en SIMULIDE en su estado base de carros avanzando.](informe/images/0-CM.png)
