@@ -15,6 +15,7 @@ int estado;
 #define CS  2 // Vehiculo detenido Cars Stop
 #define PM  3 // Peatones avanzando Pedestrian moving
 #define PB 4 // parpadeo peatones Pedestrian Blink
+#define PS 5 // peatones detenido
 
 struct FSM{
     void (*stateptr)(void);//nombre presente
@@ -31,7 +32,7 @@ void CarsMoving(void){
     PORTB = (0<<PB5)|(1<<PB4)|(1<<PB3)|(0<<PB2); //Activa luz verde carros
 }
 void CarsBlink(void){
-  PORTB ^= (1<<PB4)|(1<<PB3); // Parpadea verde carros y rojo peatones
+  PORTB ^= (1<<PB4); // Parpadea verde carros  |(1<<PB3)
 }
 void CarsStop(void){
     PORTB = (1<<PB5)|(0<<PB4)|(1<<PB3)|(0<<PB2); //Activa luz roja carros
@@ -40,16 +41,20 @@ void PedestriansMoving(void){
     PORTB = (1<<PB5)|(0<<PB4)|(0<<PB3)|(1<<PB2); //Activa luz verde peatones
 }
 void PedestriansBlink(void){
-  PORTB ^= (1<<PB5)|(1<<PB2); // Parpadea rojo carros y verde peatones
+  PORTB ^= (1<<PB2); // Parpadea verde peatones (1<<PB5)|
+}
+void PedestriansStop(void){
+    PORTB = (1<<PB5)|(0<<PB4)|(1<<PB3)|(0<<PB2); //Activa luz roja peatones
 }
 
 // Definicion FSM con sus respectivos tiempos y estados siguientes
-semaforo fsm[5] = {
+semaforo fsm[6] = {
     {&CarsMoving,10,{CM,CB}},
     {&CarsBlink,6,{CS,CS}},
     {&CarsStop,1,{PM,PM}},
     {&PedestriansMoving,10,{PB,PB}},
-    {&PedestriansBlink,6,{CM,CM}}
+    {&PedestriansBlink,6,{PS,PS}},
+    {&PedestriansStop,1,{CM,CM}}
 };
 
 
@@ -106,7 +111,7 @@ void statusChange(){
       break;
 
     case CS:
-      (fsm[estado].stateptr)(); // pone la luz en amarrillo
+      (fsm[estado].stateptr)();
       if (sec == fsm[estado].time){ // si pasaron 2 segundos pase de estado
         estado = fsm[estado].next[boton];
         intr_count = 0;
@@ -138,6 +143,16 @@ void statusChange(){
       }
       break;
 
+      case PS:
+        (fsm[estado].stateptr)();
+        if (sec == fsm[estado].time){ // si pasaron 2 segundos pase de estado
+          estado = fsm[estado].next[boton];
+          intr_count = 0;
+          sec = 0;
+          msec =0;
+        }
+        break;
+
     default:
       break;
   }
@@ -156,7 +171,7 @@ int main(void)
 }
 
 ISR (TIMER0_OVF_vect){      //Interrupcion por contador
-  if (intr_count == 30){  //cuenta medio segundo para los parpadeps
+  if (intr_count == 20){  //cuenta medio segundo para los parpadeps
     if( estado == CB ){
       (fsm[CB].stateptr)();
     }
